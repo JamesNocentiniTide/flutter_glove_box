@@ -104,7 +104,10 @@ WidgetWrapper materialAppWrapper({
         supportedLocales: localeOverrides ?? const [Locale('en')],
         theme: theme?.copyWith(platform: platform),
         debugShowCheckedModeBanner: false,
-        home: Material(child: child),
+        home: Material(
+          color: Colors.grey[50],
+          child: child,
+        ),
         navigatorObservers: [
           if (navigatorObserver != null) navigatorObserver,
         ],
