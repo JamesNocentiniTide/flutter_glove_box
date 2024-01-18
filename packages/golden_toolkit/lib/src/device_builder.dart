@@ -223,6 +223,10 @@ class DeviceScenarioWidget extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
                     fontSize: 18,
+                    letterSpacing: 0,
+                    height: 21 / 18,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.black87,
                   ),
                 ),
               ),

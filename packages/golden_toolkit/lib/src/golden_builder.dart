@@ -5,7 +5,7 @@
 /// license that can be found in the LICENSE file or at
 /// https://opensource.org/licenses/BSD-3-Clause
 /// ***************************************************
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 import 'testing_tools.dart';
 
@@ -163,7 +163,16 @@ class _Scenario extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(name, style: const TextStyle(fontSize: 18)),
+          Text(
+            name,
+            style: const TextStyle(
+              fontSize: 18,
+              letterSpacing: 0,
+              height: 21 / 18,
+              fontWeight: FontWeight.w400,
+              color: Colors.black87,
+            ),
+          ),
           const SizedBox(height: 4),
           wrap?.call(widget) ?? widget,
         ],
